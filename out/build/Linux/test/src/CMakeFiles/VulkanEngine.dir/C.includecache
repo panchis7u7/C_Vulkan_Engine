@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../../../engine/src/platform.h
+TargetConditionals.h
+-
+
+../../../engine/src/test.h
+platform.h
+../../../engine/src/platform.h
+
+/home/panchis/Desktop/Vulkan_Engine/test/src/main.c
+stdio.h
+-
+stdlib.h
+-
+test.h
+-
+

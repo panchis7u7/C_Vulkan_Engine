@@ -70,3 +70,17 @@ typedef char bool8;
 #else
 #error "Unknown platform!"
 #endif
+
+#ifdef VKCEXPORT
+#ifdef _MSC_VER
+#define KCAPI __declspec(dllexport)
+#else
+#define KCAPI __attribute__((visibility("default")))
+#endif
+#else
+#ifdef _MSC_VER
+#define KCAPI __declspec(dllimport)
+#else
+#define KCAPI
+#endif
+#endif

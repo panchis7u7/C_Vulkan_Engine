@@ -1,0 +1,8 @@
+/home/panchis/Desktop/Vulkan_Engine/out/build/Linux/CMakeFiles/rebuild_cache.dir
+/home/panchis/Desktop/Vulkan_Engine/out/build/Linux/CMakeFiles/edit_cache.dir
+/home/panchis/Desktop/Vulkan_Engine/out/build/Linux/engine/src/CMakeFiles/rebuild_cache.dir
+/home/panchis/Desktop/Vulkan_Engine/out/build/Linux/engine/src/CMakeFiles/edit_cache.dir
+/home/panchis/Desktop/Vulkan_Engine/out/build/Linux/engine/src/CMakeFiles/VKEngine.dir
+/home/panchis/Desktop/Vulkan_Engine/out/build/Linux/test/src/CMakeFiles/rebuild_cache.dir
+/home/panchis/Desktop/Vulkan_Engine/out/build/Linux/test/src/CMakeFiles/edit_cache.dir
+/home/panchis/Desktop/Vulkan_Engine/out/build/Linux/test/src/CMakeFiles/VulkanEngine.dir

@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/panchis/Desktop/Vulkan_Engine/engine/src/platform.h
+TargetConditionals.h
+-
+
+/home/panchis/Desktop/Vulkan_Engine/engine/src/test.c
+test.h
+/home/panchis/Desktop/Vulkan_Engine/engine/src/test.h
+stdio.h
+/home/panchis/Desktop/Vulkan_Engine/engine/src/stdio.h
+
+/home/panchis/Desktop/Vulkan_Engine/engine/src/test.h
+platform.h
+/home/panchis/Desktop/Vulkan_Engine/engine/src/platform.h
+
