@@ -4,6 +4,6 @@
 
 int main(void)
 {
-    print_int(39);
+    print_int(3400);
     return 0;
 }
