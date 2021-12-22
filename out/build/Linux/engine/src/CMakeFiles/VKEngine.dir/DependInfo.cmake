@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/panchis/Desktop/Vulkan_Engine/engine/src/test.c" "/home/panchis/Desktop/Vulkan_Engine/out/build/Linux/engine/src/CMakeFiles/VKEngine.dir/test.c.o"
+  "/home/panchis/Desktop/Vulkan_Engine/engine/src/core/logger.c" "/home/panchis/Desktop/Vulkan_Engine/out/build/Linux/engine/src/CMakeFiles/VKEngine.dir/core/logger.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

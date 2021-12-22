@@ -1,9 +1,9 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <test.h>
+#include <core/logger.h>
+#include <core/asserts.h>
 
-int main(void)
-{
-    print_int(3400);
+int main(void) {
+    VKCINFO("Hello from log system! %f", 3.1415f);
+
+    VKCASSERT(1==1);
     return 0;
 }

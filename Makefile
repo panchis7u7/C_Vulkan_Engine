@@ -1,6 +1,6 @@
 .PHONY: all
 	cmake -S . -B out/build/Linux
-build: out/build/Linux
+build:
 	make -C out/build/Linux
-run: build
+run:
 	out/build/Linux/VulkanEngine

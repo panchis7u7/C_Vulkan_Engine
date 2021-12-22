@@ -1,0 +1,5 @@
+{
+    "cmake.default.buildDirectory": "${workspaceFolder}/out/build/Linux",
+    "editor.autoIndent": "none",
+    "editor.formatOnSave": false,
+}

@@ -1,1 +1,1 @@
-/usr/bin/cc -fPIC  -Wall -Wextra -Werror -pedantic-errors -ggdb -shared -Wl,-soname,libVKEngine.so -o ../../libVKEngine.so CMakeFiles/VKEngine.dir/test.c.o 
+/usr/bin/cc -fPIC  -Wall -Wextra -Werror -pedantic-errors -ggdb -shared -Wl,-soname,libVKEngine.so -o ../../libVKEngine.so CMakeFiles/VKEngine.dir/core/logger.c.o 

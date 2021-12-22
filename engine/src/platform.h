@@ -73,14 +73,14 @@ typedef char bool8;
 
 #ifdef VKCEXPORT
 #ifdef _MSC_VER
-#define KCAPI __declspec(dllexport)
+#define VKCAPI __declspec(dllexport)
 #else
-#define KCAPI __attribute__((visibility("default")))
+#define VKCAPI __attribute__((visibility("default")))
 #endif
 #else
 #ifdef _MSC_VER
-#define KCAPI __declspec(dllimport)
+#define VKCAPI __declspec(dllimport)
 #else
-#define KCAPI
+#define VKCAPI
 #endif
 #endif

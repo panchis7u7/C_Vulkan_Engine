@@ -6,19 +6,23 @@
 
 #IncludeRegexTransform: 
 
+../../../engine/src/core/asserts.h
+platform.h
+../../../engine/src/core/platform.h
+intrin.h
+-
+
+../../../engine/src/core/logger.h
+platform.h
+../../../engine/src/core/platform.h
+
 ../../../engine/src/platform.h
 TargetConditionals.h
 -
 
-../../../engine/src/test.h
-platform.h
-../../../engine/src/platform.h
-
 /home/panchis/Desktop/Vulkan_Engine/test/src/main.c
-stdio.h
+core/logger.h
 -
-stdlib.h
--
-test.h
+core/asserts.h
 -
 

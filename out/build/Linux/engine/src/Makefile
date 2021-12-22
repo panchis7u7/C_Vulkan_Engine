@@ -144,32 +144,32 @@ VKEngine/fast:
 	cd /home/panchis/Desktop/Vulkan_Engine/out/build/Linux && $(MAKE) $(MAKESILENT) -f engine/src/CMakeFiles/VKEngine.dir/build.make engine/src/CMakeFiles/VKEngine.dir/build
 .PHONY : VKEngine/fast
 
-test.o: test.c.o
+core/logger.o: core/logger.c.o
 
-.PHONY : test.o
+.PHONY : core/logger.o
 
 # target to build an object file
-test.c.o:
-	cd /home/panchis/Desktop/Vulkan_Engine/out/build/Linux && $(MAKE) $(MAKESILENT) -f engine/src/CMakeFiles/VKEngine.dir/build.make engine/src/CMakeFiles/VKEngine.dir/test.c.o
-.PHONY : test.c.o
+core/logger.c.o:
+	cd /home/panchis/Desktop/Vulkan_Engine/out/build/Linux && $(MAKE) $(MAKESILENT) -f engine/src/CMakeFiles/VKEngine.dir/build.make engine/src/CMakeFiles/VKEngine.dir/core/logger.c.o
+.PHONY : core/logger.c.o
 
-test.i: test.c.i
+core/logger.i: core/logger.c.i
 
-.PHONY : test.i
+.PHONY : core/logger.i
 
 # target to preprocess a source file
-test.c.i:
-	cd /home/panchis/Desktop/Vulkan_Engine/out/build/Linux && $(MAKE) $(MAKESILENT) -f engine/src/CMakeFiles/VKEngine.dir/build.make engine/src/CMakeFiles/VKEngine.dir/test.c.i
-.PHONY : test.c.i
+core/logger.c.i:
+	cd /home/panchis/Desktop/Vulkan_Engine/out/build/Linux && $(MAKE) $(MAKESILENT) -f engine/src/CMakeFiles/VKEngine.dir/build.make engine/src/CMakeFiles/VKEngine.dir/core/logger.c.i
+.PHONY : core/logger.c.i
 
-test.s: test.c.s
+core/logger.s: core/logger.c.s
 
-.PHONY : test.s
+.PHONY : core/logger.s
 
 # target to generate assembly for a file
-test.c.s:
-	cd /home/panchis/Desktop/Vulkan_Engine/out/build/Linux && $(MAKE) $(MAKESILENT) -f engine/src/CMakeFiles/VKEngine.dir/build.make engine/src/CMakeFiles/VKEngine.dir/test.c.s
-.PHONY : test.c.s
+core/logger.c.s:
+	cd /home/panchis/Desktop/Vulkan_Engine/out/build/Linux && $(MAKE) $(MAKESILENT) -f engine/src/CMakeFiles/VKEngine.dir/build.make engine/src/CMakeFiles/VKEngine.dir/core/logger.c.s
+.PHONY : core/logger.c.s
 
 # Help Target
 help:
@@ -180,9 +180,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... VKEngine"
-	@echo "... test.o"
-	@echo "... test.i"
-	@echo "... test.s"
+	@echo "... core/logger.o"
+	@echo "... core/logger.i"
+	@echo "... core/logger.s"
 .PHONY : help
 
 

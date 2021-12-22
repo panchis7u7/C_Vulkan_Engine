@@ -6,17 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/home/panchis/Desktop/Vulkan_Engine/engine/src/platform.h
+../../../engine/src/platform.h
 TargetConditionals.h
 -
 
-/home/panchis/Desktop/Vulkan_Engine/engine/src/test.c
-test.h
-/home/panchis/Desktop/Vulkan_Engine/engine/src/test.h
+/home/panchis/Desktop/Vulkan_Engine/engine/src/core/logger.c
+logger.h
+/home/panchis/Desktop/Vulkan_Engine/engine/src/core/logger.h
 stdio.h
-/home/panchis/Desktop/Vulkan_Engine/engine/src/stdio.h
+-
+string.h
+-
+stdarg.h
+-
 
-/home/panchis/Desktop/Vulkan_Engine/engine/src/test.h
+/home/panchis/Desktop/Vulkan_Engine/engine/src/core/logger.h
 platform.h
-/home/panchis/Desktop/Vulkan_Engine/engine/src/platform.h
+/home/panchis/Desktop/Vulkan_Engine/engine/src/core/platform.h
 
