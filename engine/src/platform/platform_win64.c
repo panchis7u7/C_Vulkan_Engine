@@ -57,10 +57,10 @@ bool8 platform_startup(platform_state* plat_state, const char* app_name, i32 x, 
     }
 
     // Client area.
-    u32 client_x;
-    u32 client_y;
-    u32 client_width;
-    u32 client_height;
+    u32 client_x = x;
+    u32 client_y = y;
+    u32 client_width = width;
+    u32 client_height = height;
 
     // Window area.
     u32 window_x = client_x;
@@ -205,6 +205,7 @@ LRESULT CALLBACK win_process_message(HWND hwnd, u32 msg, WPARAM w_param, LPARAM 
             return 1;
         case WM_CLOSE:
             // TODO: Fire an event for the application to quit.
+            exit(0);
             return 0;
         case WM_DESTROY:
             PostQuitMessage(0);

@@ -78,6 +78,7 @@ typedef char bool8;
 #define VKCAPI __attribute__((visibility("default")))
 #endif
 #else
+// Imports.
 #ifdef _MSC_VER
 #define VKCAPI __declspec(dllimport)
 #else
