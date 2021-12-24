@@ -1,6 +1,6 @@
 #pragma once
 
-#include "platform.h"
+#include "defines.h"
 
 #define VKCASSERTIONS_ENABLED TRUE
 

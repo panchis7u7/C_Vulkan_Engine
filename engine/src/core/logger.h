@@ -1,6 +1,6 @@
 #pragma once
 
-#include "platform.h"
+#include "defines.h"
 
 #define LOG_WARN_ENABLED TRUE
 #define LOG_INFO_ENABLED TRUE
