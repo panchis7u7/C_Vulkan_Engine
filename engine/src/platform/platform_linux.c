@@ -11,6 +11,7 @@
 #include <X11/Xlib.h>
 #include <X11/Xlib-xcb.h>
 #include <sys/time.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -90,7 +91,8 @@ bool8 platform_startup(platform_state* plat_state, const char* app_name, i32 x, 
     u32 value_list[] = { state->screen->black_pixel, event_values };
 
     // Create window.
-    xcb_void_cookie_t cookie = xcb_create_window(
+    //xcb_void_cookie_t cookie = xcb_create_window(
+    xcb_create_window(
         state->connection, XCB_COPY_FROM_PARENT,
         state->window, state->screen->root,
         x, y, width, height, 0,
@@ -156,16 +158,58 @@ void platform_shutdown(platform_state* plat_state) {
 
 //-------------------------------------------------------------------------------------------------------------
 bool8 platform_pump_message(platform_state* plat_state) {
-    
+    internal_state* state = (internal_state*)plat_state->internal_state;
+
+    xcb_generic_event_t* event;
+    xcb_client_message_event_t* cm;
+
+    bool8 quit_flagged = FALSE;
+
+    // Poll for events untill NULL is returned.
+    while (event != 0) {   
+        event = xcb_poll_for_event(state->connection);
+        if(event == 0)
+            break;
+        
+        // Input events.
+        switch(event->response_type & ~0x80) {
+            case XCB_KEY_PRESS:
+            case XCB_KEY_RELEASE: {
+                //TODO: Key presses and releases.
+            } break;
+            case XCB_BUTTON_PRESS:
+            case XCB_BUTTON_RELEASE: {
+                //TODO: Mouse button presses and releases.
+            } break;
+            case XCB_MOTION_NOTIFY:
+                //TODO: Mouse movement.
+                break;
+            case XCB_CONFIGURE_NOTIFY:
+                //TODO: Resizing.
+                break;
+            case XCB_CLIENT_MESSAGE: {
+                cm = (xcb_client_message_event_t*) event;
+
+                //Window close.
+                if(cm->data.data32[0] == state->wm_delete_win)
+                    quit_flagged = TRUE;
+            } break;
+            default: break;
+        }
+        free(event);
+    }
+    return !quit_flagged;
 }
 
 //-------------------------------------------------------------------------------------------------------------
 void* platform_alloc(u64 size, bool8 aligned) {
+    (void)aligned;
     return malloc(size);
 }
 
 //-------------------------------------------------------------------------------------------------------------
 void platform_free(void* block, bool8 aligned) {
+    (void)aligned;
     free(block);
 }
 
@@ -186,22 +230,37 @@ void* platform_set_memory(void* dest, i32 value, u64 size) {
 
 //-------------------------------------------------------------------------------------------------------------
 void platform_console_write(const char* message, u8 colour) {
-    
+    // FATAL, ERROR, WARN, INFO, DEBUG, TRACE.
+    const char* colour_strings[6] = { "0;41", "1;31", "1;33", "1:32", "1;34", "1;30" };
+    printf("\033[%sm%s\033[0m", colour_strings[colour], message);
 }
 
 //-------------------------------------------------------------------------------------------------------------
 void platform_console_write_error(const char* message, u8 colour) {
-    
+    // FATAL, ERROR, WARN, INFO, DEBUG, TRACE.
+    const char* colour_strings[6] = { "0;41", "1;31", "1;33", "1:32", "1;34", "1;30" };
+    printf("\033[%sm%s\033[0m", colour_strings[colour], message);
 }
 
 //-------------------------------------------------------------------------------------------------------------
 f64 platform_get_absolute_time() {
-
+    struct timespec now;
+    clock_gettime(CLOCK_MONOTONIC, &now);
+    return now.tv_sec + now.tv_nsec * 0.000000001;
 }
 
 //------------------------------------------------------------------------------------------------------------- 
 void platform_sleep(u64 ms) {
-
+    #if _POSIX_C_SOURCE >= 199309L
+        struct timespec ts;
+        ts.tv_sec = ms / 1000;
+        ts.tv_nsec = (ms % 1000) * 1000 * 1000;
+        nanosleep(&ts, 0);
+    #else
+        if(ms >= 1000)
+            sleep(ms / 1000);
+        usleep((ms % 1000) * 1000);
+    #endif 
 }
 
 #endif //LINUX_PLATFORM

@@ -171,6 +171,60 @@ core/logger.c.s:
 	cd /home/panchis/Desktop/Vulkan_Engine/out/build/Linux && $(MAKE) $(MAKESILENT) -f engine/src/CMakeFiles/VKEngine.dir/build.make engine/src/CMakeFiles/VKEngine.dir/core/logger.c.s
 .PHONY : core/logger.c.s
 
+platform/platform_linux.o: platform/platform_linux.c.o
+
+.PHONY : platform/platform_linux.o
+
+# target to build an object file
+platform/platform_linux.c.o:
+	cd /home/panchis/Desktop/Vulkan_Engine/out/build/Linux && $(MAKE) $(MAKESILENT) -f engine/src/CMakeFiles/VKEngine.dir/build.make engine/src/CMakeFiles/VKEngine.dir/platform/platform_linux.c.o
+.PHONY : platform/platform_linux.c.o
+
+platform/platform_linux.i: platform/platform_linux.c.i
+
+.PHONY : platform/platform_linux.i
+
+# target to preprocess a source file
+platform/platform_linux.c.i:
+	cd /home/panchis/Desktop/Vulkan_Engine/out/build/Linux && $(MAKE) $(MAKESILENT) -f engine/src/CMakeFiles/VKEngine.dir/build.make engine/src/CMakeFiles/VKEngine.dir/platform/platform_linux.c.i
+.PHONY : platform/platform_linux.c.i
+
+platform/platform_linux.s: platform/platform_linux.c.s
+
+.PHONY : platform/platform_linux.s
+
+# target to generate assembly for a file
+platform/platform_linux.c.s:
+	cd /home/panchis/Desktop/Vulkan_Engine/out/build/Linux && $(MAKE) $(MAKESILENT) -f engine/src/CMakeFiles/VKEngine.dir/build.make engine/src/CMakeFiles/VKEngine.dir/platform/platform_linux.c.s
+.PHONY : platform/platform_linux.c.s
+
+platform/platform_win64.o: platform/platform_win64.c.o
+
+.PHONY : platform/platform_win64.o
+
+# target to build an object file
+platform/platform_win64.c.o:
+	cd /home/panchis/Desktop/Vulkan_Engine/out/build/Linux && $(MAKE) $(MAKESILENT) -f engine/src/CMakeFiles/VKEngine.dir/build.make engine/src/CMakeFiles/VKEngine.dir/platform/platform_win64.c.o
+.PHONY : platform/platform_win64.c.o
+
+platform/platform_win64.i: platform/platform_win64.c.i
+
+.PHONY : platform/platform_win64.i
+
+# target to preprocess a source file
+platform/platform_win64.c.i:
+	cd /home/panchis/Desktop/Vulkan_Engine/out/build/Linux && $(MAKE) $(MAKESILENT) -f engine/src/CMakeFiles/VKEngine.dir/build.make engine/src/CMakeFiles/VKEngine.dir/platform/platform_win64.c.i
+.PHONY : platform/platform_win64.c.i
+
+platform/platform_win64.s: platform/platform_win64.c.s
+
+.PHONY : platform/platform_win64.s
+
+# target to generate assembly for a file
+platform/platform_win64.c.s:
+	cd /home/panchis/Desktop/Vulkan_Engine/out/build/Linux && $(MAKE) $(MAKESILENT) -f engine/src/CMakeFiles/VKEngine.dir/build.make engine/src/CMakeFiles/VKEngine.dir/platform/platform_win64.c.s
+.PHONY : platform/platform_win64.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -183,6 +237,12 @@ help:
 	@echo "... core/logger.o"
 	@echo "... core/logger.i"
 	@echo "... core/logger.s"
+	@echo "... platform/platform_linux.o"
+	@echo "... platform/platform_linux.i"
+	@echo "... platform/platform_linux.s"
+	@echo "... platform/platform_win64.o"
+	@echo "... platform/platform_win64.i"
+	@echo "... platform/platform_win64.s"
 .PHONY : help
 
 

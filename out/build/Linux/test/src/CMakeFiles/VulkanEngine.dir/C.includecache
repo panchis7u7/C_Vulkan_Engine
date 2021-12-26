@@ -7,22 +7,28 @@
 #IncludeRegexTransform: 
 
 ../../../engine/src/core/asserts.h
-platform.h
-../../../engine/src/core/platform.h
+defines.h
+../../../engine/src/core/defines.h
 intrin.h
 -
 
 ../../../engine/src/core/logger.h
-platform.h
-../../../engine/src/core/platform.h
+defines.h
+../../../engine/src/core/defines.h
 
-../../../engine/src/platform.h
+../../../engine/src/defines.h
 TargetConditionals.h
 -
+
+../../../engine/src/platform/platform.h
+defines.h
+../../../engine/src/platform/defines.h
 
 /home/panchis/Desktop/Vulkan_Engine/test/src/main.c
 core/logger.h
 -
 core/asserts.h
+-
+platform/platform.h
 -
 

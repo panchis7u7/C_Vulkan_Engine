@@ -6,21 +6,43 @@
 
 #IncludeRegexTransform: 
 
-../../../engine/src/platform.h
+../../../engine/src/core/logger.h
+defines.h
+../../../engine/src/core/defines.h
+
+../../../engine/src/defines.h
 TargetConditionals.h
 -
 
-/home/panchis/Desktop/Vulkan_Engine/engine/src/core/logger.c
-logger.h
-/home/panchis/Desktop/Vulkan_Engine/engine/src/core/logger.h
+/home/panchis/Desktop/Vulkan_Engine/engine/src/platform/platform.h
+defines.h
+/home/panchis/Desktop/Vulkan_Engine/engine/src/platform/defines.h
+
+/home/panchis/Desktop/Vulkan_Engine/engine/src/platform/platform_linux.c
+platform.h
+/home/panchis/Desktop/Vulkan_Engine/engine/src/platform/platform.h
+core/logger.h
+/home/panchis/Desktop/Vulkan_Engine/engine/src/platform/core/logger.h
+xcb/xcb.h
+-
+X11/keysym.h
+-
+X11/XKBlib.h
+-
+X11/Xlib.h
+-
+X11/Xlib-xcb.h
+-
+sys/time.h
+-
 stdio.h
+-
+stdlib.h
 -
 string.h
 -
-stdarg.h
+time.h
 -
-
-/home/panchis/Desktop/Vulkan_Engine/engine/src/core/logger.h
-platform.h
-/home/panchis/Desktop/Vulkan_Engine/engine/src/core/platform.h
+unistd.h
+-
 

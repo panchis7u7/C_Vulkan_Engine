@@ -3,6 +3,7 @@
 
 test/src/CMakeFiles/VulkanEngine.dir/main.c.o: ../../../engine/src/core/asserts.h
 test/src/CMakeFiles/VulkanEngine.dir/main.c.o: ../../../engine/src/core/logger.h
-test/src/CMakeFiles/VulkanEngine.dir/main.c.o: ../../../engine/src/platform.h
+test/src/CMakeFiles/VulkanEngine.dir/main.c.o: ../../../engine/src/defines.h
+test/src/CMakeFiles/VulkanEngine.dir/main.c.o: ../../../engine/src/platform/platform.h
 test/src/CMakeFiles/VulkanEngine.dir/main.c.o: ../../../test/src/main.c
 

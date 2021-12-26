@@ -4,5 +4,6 @@
 test/src/CMakeFiles/VulkanEngine.dir/main.c.o
  ../../../engine/src/core/asserts.h
  ../../../engine/src/core/logger.h
- ../../../engine/src/platform.h
+ ../../../engine/src/defines.h
+ ../../../engine/src/platform/platform.h
  /home/panchis/Desktop/Vulkan_Engine/test/src/main.c
