@@ -1,4 +1,4 @@
-.PHONY: all
+cmake:
 	cmake -S . -B out/build/Linux
 build:
 	make -C out/build/Linux

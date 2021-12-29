@@ -144,6 +144,33 @@ VKEngine/fast:
 	cd /home/panchis/Desktop/Vulkan_Engine/out/build/Linux && $(MAKE) $(MAKESILENT) -f engine/src/CMakeFiles/VKEngine.dir/build.make engine/src/CMakeFiles/VKEngine.dir/build
 .PHONY : VKEngine/fast
 
+core/application.o: core/application.c.o
+
+.PHONY : core/application.o
+
+# target to build an object file
+core/application.c.o:
+	cd /home/panchis/Desktop/Vulkan_Engine/out/build/Linux && $(MAKE) $(MAKESILENT) -f engine/src/CMakeFiles/VKEngine.dir/build.make engine/src/CMakeFiles/VKEngine.dir/core/application.c.o
+.PHONY : core/application.c.o
+
+core/application.i: core/application.c.i
+
+.PHONY : core/application.i
+
+# target to preprocess a source file
+core/application.c.i:
+	cd /home/panchis/Desktop/Vulkan_Engine/out/build/Linux && $(MAKE) $(MAKESILENT) -f engine/src/CMakeFiles/VKEngine.dir/build.make engine/src/CMakeFiles/VKEngine.dir/core/application.c.i
+.PHONY : core/application.c.i
+
+core/application.s: core/application.c.s
+
+.PHONY : core/application.s
+
+# target to generate assembly for a file
+core/application.c.s:
+	cd /home/panchis/Desktop/Vulkan_Engine/out/build/Linux && $(MAKE) $(MAKESILENT) -f engine/src/CMakeFiles/VKEngine.dir/build.make engine/src/CMakeFiles/VKEngine.dir/core/application.c.s
+.PHONY : core/application.c.s
+
 core/logger.o: core/logger.c.o
 
 .PHONY : core/logger.o
@@ -234,6 +261,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... VKEngine"
+	@echo "... core/application.o"
+	@echo "... core/application.i"
+	@echo "... core/application.s"
 	@echo "... core/logger.o"
 	@echo "... core/logger.i"
 	@echo "... core/logger.s"

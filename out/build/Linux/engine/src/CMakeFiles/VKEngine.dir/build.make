@@ -76,9 +76,22 @@ include engine/src/CMakeFiles/VKEngine.dir/progress.make
 # Include the compile flags for this target's objects.
 include engine/src/CMakeFiles/VKEngine.dir/flags.make
 
+engine/src/CMakeFiles/VKEngine.dir/core/application.c.o: engine/src/CMakeFiles/VKEngine.dir/flags.make
+engine/src/CMakeFiles/VKEngine.dir/core/application.c.o: ../../../engine/src/core/application.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/panchis/Desktop/Vulkan_Engine/out/build/Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object engine/src/CMakeFiles/VKEngine.dir/core/application.c.o"
+	cd /home/panchis/Desktop/Vulkan_Engine/out/build/Linux/engine/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VKEngine.dir/core/application.c.o -c /home/panchis/Desktop/Vulkan_Engine/engine/src/core/application.c
+
+engine/src/CMakeFiles/VKEngine.dir/core/application.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VKEngine.dir/core/application.c.i"
+	cd /home/panchis/Desktop/Vulkan_Engine/out/build/Linux/engine/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/panchis/Desktop/Vulkan_Engine/engine/src/core/application.c > CMakeFiles/VKEngine.dir/core/application.c.i
+
+engine/src/CMakeFiles/VKEngine.dir/core/application.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VKEngine.dir/core/application.c.s"
+	cd /home/panchis/Desktop/Vulkan_Engine/out/build/Linux/engine/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/panchis/Desktop/Vulkan_Engine/engine/src/core/application.c -o CMakeFiles/VKEngine.dir/core/application.c.s
+
 engine/src/CMakeFiles/VKEngine.dir/core/logger.c.o: engine/src/CMakeFiles/VKEngine.dir/flags.make
 engine/src/CMakeFiles/VKEngine.dir/core/logger.c.o: ../../../engine/src/core/logger.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/panchis/Desktop/Vulkan_Engine/out/build/Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object engine/src/CMakeFiles/VKEngine.dir/core/logger.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/panchis/Desktop/Vulkan_Engine/out/build/Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object engine/src/CMakeFiles/VKEngine.dir/core/logger.c.o"
 	cd /home/panchis/Desktop/Vulkan_Engine/out/build/Linux/engine/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VKEngine.dir/core/logger.c.o -c /home/panchis/Desktop/Vulkan_Engine/engine/src/core/logger.c
 
 engine/src/CMakeFiles/VKEngine.dir/core/logger.c.i: cmake_force
@@ -91,7 +104,7 @@ engine/src/CMakeFiles/VKEngine.dir/core/logger.c.s: cmake_force
 
 engine/src/CMakeFiles/VKEngine.dir/platform/platform_linux.c.o: engine/src/CMakeFiles/VKEngine.dir/flags.make
 engine/src/CMakeFiles/VKEngine.dir/platform/platform_linux.c.o: ../../../engine/src/platform/platform_linux.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/panchis/Desktop/Vulkan_Engine/out/build/Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object engine/src/CMakeFiles/VKEngine.dir/platform/platform_linux.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/panchis/Desktop/Vulkan_Engine/out/build/Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object engine/src/CMakeFiles/VKEngine.dir/platform/platform_linux.c.o"
 	cd /home/panchis/Desktop/Vulkan_Engine/out/build/Linux/engine/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VKEngine.dir/platform/platform_linux.c.o -c /home/panchis/Desktop/Vulkan_Engine/engine/src/platform/platform_linux.c
 
 engine/src/CMakeFiles/VKEngine.dir/platform/platform_linux.c.i: cmake_force
@@ -104,7 +117,7 @@ engine/src/CMakeFiles/VKEngine.dir/platform/platform_linux.c.s: cmake_force
 
 engine/src/CMakeFiles/VKEngine.dir/platform/platform_win64.c.o: engine/src/CMakeFiles/VKEngine.dir/flags.make
 engine/src/CMakeFiles/VKEngine.dir/platform/platform_win64.c.o: ../../../engine/src/platform/platform_win64.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/panchis/Desktop/Vulkan_Engine/out/build/Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object engine/src/CMakeFiles/VKEngine.dir/platform/platform_win64.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/panchis/Desktop/Vulkan_Engine/out/build/Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object engine/src/CMakeFiles/VKEngine.dir/platform/platform_win64.c.o"
 	cd /home/panchis/Desktop/Vulkan_Engine/out/build/Linux/engine/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VKEngine.dir/platform/platform_win64.c.o -c /home/panchis/Desktop/Vulkan_Engine/engine/src/platform/platform_win64.c
 
 engine/src/CMakeFiles/VKEngine.dir/platform/platform_win64.c.i: cmake_force
@@ -117,6 +130,7 @@ engine/src/CMakeFiles/VKEngine.dir/platform/platform_win64.c.s: cmake_force
 
 # Object files for target VKEngine
 VKEngine_OBJECTS = \
+"CMakeFiles/VKEngine.dir/core/application.c.o" \
 "CMakeFiles/VKEngine.dir/core/logger.c.o" \
 "CMakeFiles/VKEngine.dir/platform/platform_linux.c.o" \
 "CMakeFiles/VKEngine.dir/platform/platform_win64.c.o"
@@ -124,12 +138,13 @@ VKEngine_OBJECTS = \
 # External object files for target VKEngine
 VKEngine_EXTERNAL_OBJECTS =
 
+libVKEngine.so: engine/src/CMakeFiles/VKEngine.dir/core/application.c.o
 libVKEngine.so: engine/src/CMakeFiles/VKEngine.dir/core/logger.c.o
 libVKEngine.so: engine/src/CMakeFiles/VKEngine.dir/platform/platform_linux.c.o
 libVKEngine.so: engine/src/CMakeFiles/VKEngine.dir/platform/platform_win64.c.o
 libVKEngine.so: engine/src/CMakeFiles/VKEngine.dir/build.make
 libVKEngine.so: engine/src/CMakeFiles/VKEngine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/panchis/Desktop/Vulkan_Engine/out/build/Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library ../../libVKEngine.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/panchis/Desktop/Vulkan_Engine/out/build/Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared library ../../libVKEngine.so"
 	cd /home/panchis/Desktop/Vulkan_Engine/out/build/Linux/engine/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/VKEngine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
