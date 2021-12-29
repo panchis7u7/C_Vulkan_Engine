@@ -1,4 +1,5 @@
 #include "application.h"
+#include "game_types.h"
 #include "logger.h"
 #include "platform/platform.h"
 
@@ -38,7 +39,7 @@ bool8 application_create(game* game_instance) {
     app_state.is_running = TRUE;
     app_state.is_suspended = FALSE;
 
-    if(platform_startup(
+    if(!platform_startup(
         &app_state.platform, 
         game_instance->app_config.name, 
         game_instance->app_config.start_pos_x, 

@@ -18,13 +18,13 @@ int main(void) {
     }
 
     if(!application_create(&game_instance)) {
-        VKCFATAL("The application failed to create!");
+        VKCINFO("The application failed to create!");
         return 1;
     }
 
     // Begin the game loop.
     if(!application_run()) {
-        VKCFATAL("The application did not shutdown gracefully!");
+        VKCINFO("The application did not shutdown gracefully!");
         return 2;
     }
 

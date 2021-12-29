@@ -1,1 +1,0 @@
-/usr/bin/cc  -Wall -Wextra -Werror -pedantic-errors -ggdb CMakeFiles/VulkanEngine.dir/main.c.o -o ../../VulkanEngine  -Wl,-rpath,/home/panchis/Desktop/Vulkan_Engine/out/build/Linux ../../libVKEngine.so -lX11 -lX11-xcb -lxkbcommon -lvulkan -L/usr/X11R6/lib 

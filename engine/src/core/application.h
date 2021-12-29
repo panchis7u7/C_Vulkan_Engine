@@ -1,7 +1,8 @@
 #pragma once
 
 #include "defines.h"
-#include "game_types.h"
+
+struct game;
 
 typedef struct application_config {
     i16 start_pos_x;    // Window starting position in the x axis.
@@ -11,5 +12,5 @@ typedef struct application_config {
     char* name;         // Application name used in window title.
 } application_config;
 
-VKCAPI bool8 application_create(game* game_instance);
+VKCAPI bool8 application_create(struct game* game_instance);
 VKCAPI bool8 application_run();
