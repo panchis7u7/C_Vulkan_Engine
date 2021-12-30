@@ -1,11 +1,15 @@
 #include "core/application.h"
 #include "core/logger.h"
+#include "core/vkcmemory.h"
 #include "game_types.h"
 
 // Externally defined function to create a game.
 extern bool8 create_game(game* out_game);
 
 int main(void) {
+
+    initialize_memory();
+
     game game_instance;
     if(!create_game(&game_instance)) {
         VKCFATAL("Could not create game!");
@@ -27,6 +31,8 @@ int main(void) {
         VKCINFO("The application did not shutdown gracefully!");
         return 2;
     }
+
+    shutdown_memory();
 
     return 0;
 }

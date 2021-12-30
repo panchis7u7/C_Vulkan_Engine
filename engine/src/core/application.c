@@ -2,6 +2,7 @@
 #include "game_types.h"
 #include "logger.h"
 #include "platform/platform.h"
+#include "vkcmemory.h"
 
 typedef struct application_state {
     game* game_instance;
@@ -60,6 +61,8 @@ bool8 application_create(game* game_instance) {
 }
 
 bool8 application_run() {
+    VKCINFO(get_memory_usage_str());
+    
     while (app_state.is_running) {
         if(!platform_pump_message(&app_state.platform))
             app_state.is_running = FALSE;

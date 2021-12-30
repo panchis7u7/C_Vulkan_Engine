@@ -4,6 +4,7 @@
     "editor.formatOnSave": false,
     "editor.formatOnPaste": false,
     "files.associations": {
-        "logger.h": "c"
+        "logger.h": "c",
+        "platform.h": "c"
     }
 }

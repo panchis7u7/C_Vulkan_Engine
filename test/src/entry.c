@@ -2,7 +2,7 @@
 #include <entry.h>
 
 // TODO: Remove export of platform code.
-#include <platform/platform.h>
+#include <core/vkcmemory.h>
 
 bool8 create_game(game* out_game) {
     out_game->app_config.name = "Vulkan game engine";
@@ -16,7 +16,7 @@ bool8 create_game(game* out_game) {
     out_game->on_resize = game_on_resize;
 
     // Create the game state.
-    out_game->state = platform_alloc(sizeof(game_state), FALSE);
+    out_game->state = vkalloc(sizeof(game_state), MEMORY_TAG_GAME);
 
     return TRUE;
 }
